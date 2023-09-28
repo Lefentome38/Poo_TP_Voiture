@@ -1,29 +1,15 @@
-class Pomme {
-
-    public name: string
-    public color: string
-
-    constructor(
-        name: string,
-        color: string,
-    ) {
-      console.log('Initialisation de la pomme')
-      this.name = name
-      this.color = color
-    }
-
-    public eat() {
-      console.log('Je mange une pomme')
-    }
-
-    public changeColor(newColor: string) {
-      this.color = newColor
-    }
-
-}
-
-const apple = new Pomme('Golden', 'yellow')
-apple.eat()
-apple.changeColor('red')
-console.log(apple.color)
-
+import { Voiture_utilitaire, voiture_U1, voiture_U2 } from "./class/type_voiture/voiture_utilitaire";
+import { IVoiture, afficher } from "./class/type_voiture/Interface_voitures";
+console.log(afficher.tableau_marque());
+console.log();
+console.log(afficher.tableau_modele());
+console.log();
+console.log(afficher.tableau_imatriculation());
+console.log();
+console.log(afficher.tableau_couleur());
+console.log();
+console.log(afficher.tableau_kilometre());
+console.log();
+console.log(afficher.tableau_prix());
+console.log();
+console.log(afficher.tableau_anne_cerculation());
