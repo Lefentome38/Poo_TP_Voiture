@@ -1,15 +1,16 @@
-import { Voiture_utilitaire, voiture_U1, voiture_U2 } from "./class/type_voiture/voiture_utilitaire";
-import { IVoiture, afficher } from "./class/type_voiture/Interface_voitures";
-console.log(afficher.tableau_marque());
+import { affichage } from "./class/type_voiture/affiche";
+import { Voiture_utilitaire, tableau_VU, voiture_U1 } from "./class/type_voiture/voiture_utilitaire";
+
+console.log(affichage.tableau_marque(tableau_VU));
 console.log();
-console.log(afficher.tableau_modele());
+console.log(affichage.tableau_modele(tableau_VU));
 console.log();
-console.log(afficher.tableau_imatriculation());
+console.log(affichage.tableau_imatriculation(tableau_VU));
 console.log();
-console.log(afficher.tableau_couleur());
+console.log(affichage.tableau_couleur(tableau_VU));
 console.log();
-console.log(afficher.tableau_kilometre());
+console.log(affichage.tableau_kilometre(tableau_VU));
 console.log();
-console.log(afficher.tableau_prix());
+console.log(affichage.tableau_prix(tableau_VU));
 console.log();
-console.log(afficher.tableau_anne_cerculation());
+console.log(affichage.tableau_marque(tableau_VU));

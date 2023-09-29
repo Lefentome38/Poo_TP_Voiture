@@ -1,5 +1,5 @@
-import { strict } from "assert";
 import { IVoiture } from "./Interface_voitures";
+
 export class Voiture_utilitaire implements IVoiture{
     marque:string
     modele:string
@@ -18,65 +18,8 @@ export class Voiture_utilitaire implements IVoiture{
         this.prix = prix
         this.anne_cerculation = anne_cerculation
     }
-
-    tableau_marque():string[] {
-        let a:string[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.marque);
-        })
-        return a;
-    };
-
-    tableau_modele():string[] {
-        let a:string[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.modele);
-        })
-        return a;
-    };
-
-    tableau_imatriculation():string[] {
-        let a:string[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.immatriculation);
-        })
-        return a;
-    };
-
-    tableau_couleur():string[] {
-        let a:string[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.couleur);
-        })
-        return a;
-    };
-
-    tableau_kilometre():number[] {
-        let a:number[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.kilometrage);
-        })
-        return a;
-    };
-
-    tableau_prix():number[] {
-        let a:number[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.prix);
-        })
-        return a;
-    };
-
-    tableau_anne_cerculation():number[] {
-        let a:number[] = []
-        tableau_VU.forEach(function (x){
-            a.push(x.anne_cerculation);
-        })
-        return a;
-    };
 }
-
-export const voiture_U1:IVoiture = new Voiture_utilitaire('Toyota',"k4","xxxx","rouge",45002,6700,2010)
-export const voiture_U2:IVoiture = new Voiture_utilitaire('Citroen',"k4","xxxx","gris",45002,6700,2010)
-export const voiture_U3:IVoiture = new Voiture_utilitaire('Audi',"k4","xxxx","noire",45002,6700,2010)
-const tableau_VU = [voiture_U1,voiture_U2,voiture_U3]
+export const voiture_U1:IVoiture = new Voiture_utilitaire('Toyota',"k4","RT-854-YU","rouge",851200,6700,2009)
+export const voiture_U2:IVoiture = new Voiture_utilitaire('Citroen',"c6","GA-384-MN","gris",84360,8000,2017)
+export const voiture_U3:IVoiture = new Voiture_utilitaire('Audi',"RS3","XW-194-PF","noire",84215,60000,2021)
+export const tableau_VU = [voiture_U1,voiture_U2,voiture_U3]
